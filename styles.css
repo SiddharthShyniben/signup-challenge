@@ -95,7 +95,6 @@ button:hover {
 		flex-direction: column-reverse;
 		width: 15em;
 	}
-
 	img.side {
 		clip-path: none;
 		padding: 1em;
