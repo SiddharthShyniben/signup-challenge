@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Sign Up</title>
+		<style>
+		@import './styles.css'
+		</style>
+	</head>
+	<body>
+		<section class='card'>
+			<div class="content">
+				<h1>Hello <span id='name'>Thinking...</span>, your email is
+					<code><span id='email'>Thinking...</span></code></h1>
+			</div>
+		</section>
+		<script>
+			const urlParams = new URLSearchParams(window.location.search);
+
+			document.querySelector('#name').innerText = urlParams.get('name') ?? '<no name>';
+			document.querySelector('#email').innerText = urlParams.get('email') ?? '<no email>';
+		</script>
+	</body>
+</html>
+
